@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icons/icon32" sizes="32x32" href="icons/icon32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Chrome Color Picker Extension</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Chrome Color Picker Extension</h1>
+    </div>
+    <div class="container">
+        <div class="picker">
+            <button id="picker-btn">Pick Color</button>
+            <button id="export-btn">Export Colors</button>
+        </div>
+        <div class="colors-list hide">
+            <header>
+                <p class="title">
+                    Picked Colors
+                </p>
+                <span id="clear-btn">Clear All</span>
+            </header>
+            <ul class="all-colors"></ul>
+        </div>
+        
+       
+    </div>
+    <div id="export-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p>Exported colors:</p>
+            <textarea id="exported-colors" readonly></textarea>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Mohcine Safi</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
